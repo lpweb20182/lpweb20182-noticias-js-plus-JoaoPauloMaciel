@@ -11,16 +11,12 @@ function atualizarLista(noticia) {
         + '<p class="conteudo">'
         + noticia.conteudo
         + '<br>'
-        + '<p class="autor">'
         + noticia.autor
         + '<br>'
-        + '<p class="email">'
         + noticia.email
         + '<br>'
-        + '<p class="conteudo">'
         + noticia.date
-        + '<br>'
-        + '<p class="conteudo">'
+        + '</n>'
         + noticia.time
         + '<br>'
         + '<span>------------------</span>'
@@ -34,14 +30,14 @@ function salvar(form) {
     var titulo = document.getElementById('frm-titulo').value;
     var conteudo = document.getElementById('frm-conteudo').value;
     var autor = document.getElementById('frm-autor').value;
-    var email = document.getElementById('frm-email').email;
-    var date = document.getElementById('frm-datepublic').date;
-    var time = document.getElementById('frm-timepublic').time;
+    var email = document.getElementById('frm-email').value;
+    var date = document.getElementById('frm-datepublic').value;
+    var time = document.getElementById('frm-timepublic').value;
     var noticia = {
         id: noticias.length,
         titulo: titulo,
         conteudo: conteudo,
-        autor: altor,
+        autor: autor,
         email: email,
         date: date,
         time: time
